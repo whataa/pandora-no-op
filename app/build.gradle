@@ -1,0 +1,24 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion versions.COMPILE_SDK
+    defaultConfig {
+        minSdkVersion versions.MIN_SDK
+        targetSdkVersion versions.TARGET_SDK
+        applicationId "tech.linjiang.pandora"
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "com.android.support:appcompat-v7:${versions.SUPPORT_LIB}"
+    implementation project(':pandora-no-op')
+}
