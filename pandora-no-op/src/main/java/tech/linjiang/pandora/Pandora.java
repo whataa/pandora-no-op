@@ -1,7 +1,5 @@
 package tech.linjiang.pandora;
 
-import android.app.Application;
-
 import tech.linjiang.pandora.database.Databases;
 import tech.linjiang.pandora.inspector.attribute.AttrFactory;
 import tech.linjiang.pandora.network.OkHttpInterceptor;
@@ -12,10 +10,6 @@ import tech.linjiang.pandora.preference.SharedPref;
  */
 public class Pandora {
 
-
-    public static Pandora init(Application application) {
-        return new Pandora();
-    }
 
     public static Pandora get() {
         return new Pandora();
@@ -49,7 +43,5 @@ public class Pandora {
     public void open() {
     }
 
-    public void close() {
-    }
 
 }
