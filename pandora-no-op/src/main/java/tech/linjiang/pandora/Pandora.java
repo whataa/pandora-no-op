@@ -18,7 +18,6 @@ public class Pandora {
     private Pandora() {
     }
 
-
     public OkHttpInterceptor getInterceptor() {
         return new OkHttpInterceptor();
     }
@@ -29,10 +28,6 @@ public class Pandora {
 
     public SharedPref getSharedPref() {
         return new SharedPref();
-    }
-
-    public Pandora enableShakeOpen() {
-        return this;
     }
 
     public AttrFactory getAttrFactory() {
