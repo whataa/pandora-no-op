@@ -38,6 +38,9 @@ public class Pandora {
     public void open() {
     }
 
+    public void close() {
+    }
+
     public void disableShakeSwitch() {
 
     }
