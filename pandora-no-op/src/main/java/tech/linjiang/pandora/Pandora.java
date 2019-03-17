@@ -1,6 +1,7 @@
 package tech.linjiang.pandora;
 
 import tech.linjiang.pandora.database.Databases;
+import tech.linjiang.pandora.function.IFunc;
 import tech.linjiang.pandora.inspector.attribute.AttrFactory;
 import tech.linjiang.pandora.network.OkHttpInterceptor;
 import tech.linjiang.pandora.preference.SharedPref;
@@ -8,7 +9,7 @@ import tech.linjiang.pandora.preference.SharedPref;
 /**
  * Created by linjiang on 29/05/2018.
  */
-public class Pandora {
+public final class Pandora {
 
 
     public static Pandora get() {
@@ -34,6 +35,8 @@ public class Pandora {
         return new AttrFactory();
     }
 
+    public void addFunction(IFunc func) {
+    }
 
     public void open() {
     }
@@ -42,6 +45,5 @@ public class Pandora {
     }
 
     public void disableShakeSwitch() {
-
     }
 }
