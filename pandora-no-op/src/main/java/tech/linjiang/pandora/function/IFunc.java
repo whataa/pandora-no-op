@@ -9,5 +9,5 @@ public interface IFunc {
 
     int getIcon();
     String getName();
-    void onClick();
+    boolean onClick();
 }
