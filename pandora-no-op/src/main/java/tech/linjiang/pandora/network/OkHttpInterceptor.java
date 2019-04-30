@@ -15,6 +15,4 @@ public class OkHttpInterceptor implements Interceptor {
     public Response intercept(Chain chain) throws IOException {
         return chain.proceed(chain.request());
     }
-    public void setJsonFormatter(JsonFormatter formatter) {
-    }
 }
